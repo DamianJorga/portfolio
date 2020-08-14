@@ -8,7 +8,7 @@ var watchedFiles = 'sass/**/*.scss';
 gulp.task ('buildcss', function(){
     return gulp.src(cssInputFile)
     .pipe(sass({
-        outputStyle: 'expanded'
+        outputStyle: 'compressed'
     }))
     .pipe(gulp.dest(cssDest));
 });
