@@ -1,0 +1,10 @@
+// own variables
+@import 'layout/base/variables';
+// styles bootstrap
+@import 'bootstrap-scss/scss/bootstrap.scss';
+// own styles
+@import 'layout/base/mixins';
+@import 'layout/base/typography';
+@import 'layout/base/function';
+@import 'layout/components/components';
+@import 'layout/pages/pages';
