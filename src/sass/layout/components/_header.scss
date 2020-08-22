@@ -1,0 +1,65 @@
+body {
+    height: 200vh;
+}
+//TODO Po skonczeniu sekcji usunąc selektor body 
+.header {
+    background-image: image-url('header-bg.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.section-welcome {
+    display: inline-block;
+    margin: 70px 10px 0 ;
+    background-color: rgba($color-black, .45);
+    border: 1px solid $color-gray-light;
+    border-bottom: none;
+    border-radius: 10px;
+    p {
+        padding: 20px;
+        margin: 0;
+    }
+}
+
+.headline-welcome {
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 25px 20px 20px;
+    font-size: 20px;
+
+}
+.img-welcome {
+    margin: 10px auto 0;
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+    background-color: $color-white ;
+}
+@media (min-width:567px) {
+    .section-welcome {
+        margin: 40px 65px 0 5px;
+        padding: 15px 0;
+        p {
+            padding: 0 20px;
+            margin: 0;
+        }
+    }
+    .headline-welcome {
+        padding: 15px 20px 0;    
+    }
+    .img-welcome {
+        margin: 0 auto;
+        padding: 5px 0;
+    }
+}
+@media (min-width:640px) {
+    .section-welcome {
+    margin: 150px 160px 0;
+    padding: 30px 25px;
+    }
+}
+
+
+
