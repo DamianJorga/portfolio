@@ -11,38 +11,55 @@
 <body>
     <header class="header">
                 <!-- navigation hamburger -->
-                <div class="mobile-container d-md-none">
+                <!-- <div class="mobile-container d-md-none">
                     <div class="mobile-nav">
                         <a href="#home"></a>
                         <div class="menu-mobile">
-                                    <a class="nav-link" href="#about-me">O mnie</a>
-                                    <a class="nav-link" href="#projects">Projekty</a>
-                                    <a class="nav-link" href="#contact">Kontakt</a>
+                                    <a class="nav-link col-md-4" href="#about-me">O mnie</a>
+                                    <a class="nav-link col-md-4" href="#projects">Projekty</a>
+                                    <a class="nav-link col-md-4" href="#contact">Kontakt</a>
                         </div>
                         <div class="mobile-menu_button icon">
                             <img src="images/icons/icon-menu.png" alt="">
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-        <div class="section-welcome">
+                <nav class="d-md-none">
+                <button class="hamburger" aria-expanded="false">
+                  <span class="sr-only">Open / close</span>
+                  <span class="hamburger__box">
+                    <span class="hamburger__inner"></span>
+                  </span>
+                </button>
+                <div class="navigation">
+                  <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#about">O mnie</a></li>
+                    <li class="navigation__item"><a href="#projects">Projekty</a></li>
+                    <li class="navigation__item"><a href="#contact">Kontakt</a></li>
+                  </ul>
+                </div>
+              </nav>
+
+        <div class="section-welcome mt-5">
             <div class="container">
                 <div class="row">
-                    <div class="img-welcome">symulacja grafiki</div> <!--TODO: dodac zdiecie-->     
+                    <img class="img-welcome" src="images/d.j.jpg" alt="#">  
                     <h1 class="headline-welcome text-white text-center"> Witaj! Jestem <span class="text-uppercase text-primary">Damian</span>. Zajmuje się tworzeniem stron internetowych.</h1>
-                    <p class="text-white text-center"></p> 
                 </div>
             </div>
         </div>
         <!-- navigation desc -->
         <div class="container">
-			<ul class="nav d-md-flex flex-column flex-md-row justify-content-md-center text-uppercase">
+			<ul class="nav d-none mt-3 d-md-flex flex-column flex-md-row justify-content-md-center text-uppercase">
 				<li class="nav-item">
 					<a class="nav-link text-white" href="#">O mnie</a>
-				</li>
+                </li>
+                <span class="text-primary hr">|</span>
 				<li class="nav-item">
 					<a class="nav-link text-white" href="#">Projekty</a>
-				</li>
+                </li>
+                <span class="text-primary hr">|</span>
 				<li class="nav-item">
 					<a class="nav-link text-white" href="#">Kontakt</a>
 				</li>

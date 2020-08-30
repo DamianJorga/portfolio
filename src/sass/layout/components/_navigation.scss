@@ -1,52 +1,210 @@
-// hamburger navigation
-.mobile-nav {
-    position: relative;
-    text-align: center;
-        a {
-        color: $color-white;
-        padding: 0 16px;
-        font-size: 16px;
-        display: block;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        text-decoration: none;
-      }
-      .icon {
-        display: block;
+// // hamburger navigation
+// .mobile-nav {
+//     position: relative;
+//     text-align: center;
+//         a {
+//         color: $color-white;
+//         padding: 0 16px;
+//         font-size: 16px;
+//         display: block;
+//         text-transform: uppercase;
+//         letter-spacing: 1px;
+//         text-decoration: none;
+//       }
+//       .icon {
+//         display: block;
+//         position: absolute;
+//         right: 15px;
+//         top: 15px;
+//     }
+// }
+// .menu-mobile {
+//     display: none;
+//     a {
+//         padding-bottom: 15px;
+//     }
+// }
+// .opened {
+//    display: block;
+//    overflow: hidden;
+//    background-color: rgba($color-gray-light, .3);
+//    padding: 45px 0 0;
+// }
+// // .nav {
+// //     display: none;
+// // }
+// @media (min-width:567px) {
+//     .mobile-nav {
+//             a {
+//             font-size: 14px;
+//             margin: 0 10px;
+//     }
+// }
+//     .opened {
+//     padding: 20px 0 0;
+//     }
+// }
+// @media (min-width:768px) {
+// .nav-item {
+//     padding: 10px 0 0;
+//     font-size: 14px;
+// }
+// }
+.hr{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent; }
+  
+  @media only screen and (min-width: 992px) {
+    .hamburger {
+      display: none; }
+      .hamburger:focus {
+        outline: none; } }
+  
+  .hamburger__box {
+    z-index: 999;
+    display: inline-block;
+    position: fixed;
+    top: 2rem;
+    right: 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem; }
+  
+  .hamburger__inner {
+    position: absolute;
+    width: 100%;
+    height: 2.2px;
+    background-color: $color-white;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.1s 0.2s ease-in-out; }
+  
+  .hamburger__inner::before,
+  .hamburger__inner::after {
+    position: absolute;
+    width: 100%;
+    height: 2.2px;
+    background-color: $color-white;
+    content: "";
+    left: 0;
+    transition: transform 0.2s 0.2s ease-in-out; }
+  
+  .hamburger__inner::before {
+    top: -12px; }
+  
+  .hamburger__inner::after {
+    top: 12px; }
+  
+  .hamburger--active .hamburger__inner {
+    background-color: transparent; }
+  
+  .hamburger--active .hamburger__inner::before {
+    transform: translateY(12px) rotate(45deg);
+    background-color: $color-white; }
+  
+  .hamburger--active .hamburger__inner::after {
+    transform: translateY(-12px) rotate(-45deg);
+    background-color: $color-white; }
+  
+  .navigation-container {
+    z-index: 999;
+    position: fixed;
+    background-color: $color-white;
+    left: 0;
+    width: 100%;
+    height: 7.3rem;
+    border-bottom: 0.5px solid $color-black; }
+  
+  @media only screen and (min-width: 992px) {
+    .navigation-container {
+      background-color: transparent;
+      border-bottom: none;
+      width: auto; } }
+  
+
+      .navigation {
+        height: 100vh;
+        width: 100vw;
+        opacity: 0;
+        background-color: rgba($color-black, .85);
+        position: fixed;
+        top: 0;
+        right: 0;
+        visibility: hidden;
+        transition: ease-in-out 0.5s; }
+        .navigation__list {
+          position: relative;
+          text-align: center;
+          top: 45%;
+          transform: translateY(-50%);
+          font-size: 26px;
+          padding: 0;
+          list-style: none;
+          text-transform: uppercase; }
+        .navigation__item {
+          margin-bottom: 3.6rem; }
+          .navigation__item a {
+            text-decoration: none;
+            color: $color-white; }
+        .navigation--active {
+          visibility: visible;
+          opacity: 94%;
+          transition: ease-in-out 0.5s; }
+      
+      @media only screen and (min-width: 992px) {
+        .navigation {
+          position: fixed;
+          height: auto;
+          width: 11vw;
+          opacity: 1;
+          background-color: transparent;
+          padding: 3.6rem 3.6rem 0 0;
+          visibility: visible; }
+          .navigation__list {
+            position: relative;
+            text-align: right;
+            font-size: 1.8rem;
+            transform: none;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            line-height: 2.5rem;
+            text-transform: uppercase; }
+          .navigation__item {
+            margin-bottom: 0.6rem; }
+            .navigation__item a {
+              text-decoration: none;
+              color: $color-black;
+              background-image: linear-gradient(to right, transparent 50%, black 50%);
+              background-size: 200%;
+              transition: color .4s, background-position .3s; }
+              .navigation__item a:hover {
+                color: $color-white;
+                background-position: -100%; }
+            .navigation__item--dark-mode a {
+              color: $color-white;
+              background-image: linear-gradient(to right, transparent 50%, white 50%); }
+              .navigation__item--dark-mode a:hover {
+                color: $color-black; } }
+      
+      .sr-only {
         position: absolute;
-        right: 15px;
-        top: 15px;
-    }
-}
-.menu-mobile {
-    display: none;
-    a {
-        padding-bottom: 15px;
-    }
-}
-.opened {
-   display: block;
-   overflow: hidden;
-   background-color: rgba($color-black, .55);
-   padding: 45px 0 0;
-}
-.nav {
-    display: none;
-}
-@media (min-width:567px) {
-    .mobile-nav {
-            a {
-            font-size: 14px;
-            margin: 0 10px;
-    }
-}
-    .opened {
-    padding: 20px 0 0;
-    }
-}
-@media (min-width:768px) {
-.nav-item {
-    padding: 10px 0 0;
-    font-size: 14px;
-}
-}
+        border: 0;
+        padding: 0;
+        margin: -1px;
+        height: 1px;
+        width: 1px;
+        clip: rect(0, 0, 0, 0);
+        overflow: hidden;
+        white-space: nowrap; }
+      

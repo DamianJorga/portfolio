@@ -1,9 +1,5 @@
-body {
-    height: 200vh;
-}
-//TODO Po skonczeniu sekcji usunąc selektor body 
-.header {
-    background-image: image-url('header-bg.jpg');
+ .header {
+    background-image: image-url('bg-header.jpg');
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,7 +8,7 @@ body {
 
 .section-welcome {
     display: inline-block;
-    margin: 70px 10px 0 ;
+    margin: 100px 10px 0 ;
     background-color: rgba($color-black, .45);
     border: 1px solid $color-gray-light;
     border-bottom: none;
@@ -33,31 +29,42 @@ body {
 .img-welcome {
     margin: 10px auto 0;
     border-radius: 5px;
-    height: 150px;
-    width: 150px;
+    max-height: 250px;
+    min-height: 250px;
+    object-fit: cover;
     background-color: $color-white ;
 }
 @media (min-width:567px) {
     .section-welcome {
-        margin: 40px 65px 0 5px;
+        margin: 40px 105px 0 5px;
         padding: 15px 0;
         p {
             padding: 0 20px;
             margin: 0;
         }
+        .img-welcome {
+            max-height: 150px;
+            min-height: 150px;
+    }
     }
     .headline-welcome {
         padding: 15px 20px 0;    
     }
-    .img-welcome {
-        margin: 0 auto;
-        padding: 5px 0;
-    }
 }
 @media (min-width:640px) {
     .section-welcome {
-    margin: 150px 160px 0;
-    padding: 30px 25px;
+    margin: 20px 105px 0;
+    padding: 5px ;
+    }
+    .img-welcome {
+        max-height: 200px;
+        min-height: 200px;
+}
+}
+
+@media (min-width:768px) {
+    .section-welcome {
+        padding: 50px;
     }
 }
 
