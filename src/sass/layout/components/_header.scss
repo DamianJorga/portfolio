@@ -7,8 +7,7 @@
 }
 
 .section-welcome {
-    display: inline-block;
-    margin: 100px 10px 0 ;
+    margin: 110px 10px 0 ;
     background-color: rgba($color-black, .45);
     border: 1px solid $color-gray-light;
     border-bottom: none;
@@ -66,6 +65,17 @@
     .section-welcome {
         padding: 50px;
     }
+}
+@media (min-width:1024px) {
+    .section-welcome {
+        position: relative;
+        top: 150px;
+        margin: 0 300px 0 300px   
+    }
+    .img-welcome {
+        max-height: 300px;
+        min-height: 300px;
+}
 }
 
 
