@@ -1,13 +1,6 @@
-// navigation hamburger
-// const button = document.querySelector(".mobile-menu_button");
-// button.addEventListener("click", mobileMenu);
 
-// function mobileMenu() {
-// const mobileLinks = document.querySelector(".menu-mobile");
-// mobileLinks.classList.toggle("opened");
-// }
+// scroll top button
 
-// icons arrow
 $(function(){
  
 	$(window).scroll(function() {
@@ -22,6 +15,9 @@ $(function(){
 		$('html').animate({scrollTop: 0}, 400, 'linear');
 	});
 });
+
+
+// navigation
 
 const hamburger=document.querySelector(".hamburger"),nav=document.querySelector(".navigation"),
 navItems=document.querySelectorAll(".navigation__item"),
