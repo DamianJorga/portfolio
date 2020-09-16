@@ -9,25 +9,41 @@
     <link rel="stylesheet" href="style/style.css" type="text/css">
 </head>
 <body>
+  <!-- Navbar -->
+    <nav class="navbar navbar-light navbar-3 nav_bg--color d-md-none">
+
+      <!-- Navbar brand -->
+      <a href="#" class="navbar-brand">Navbar</a>
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-targer="#navbarSupportContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    
+      <!-- collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportContent15">
+
+      <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a href="#about" class="nav-link">O mnie</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Umiejętności</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projekty</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Kontakt</a>
+            </li>
+          </ul>
+          <!-- /links -->
+      </div>
+      <!-- /collasible content -->
+    </nav>
+  <!-- /navbar -->
+
     <header class="header">
-
-                <nav class="d-md-none">
-                <button class="hamburger" aria-expanded="false">
-                  <span class="sr-only">Open / close</span>
-                  <span class="hamburger__box">
-                    <span class="hamburger__inner"></span>
-                  </span>
-                </button>
-                <div class="navigation">
-                  <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#about">O mnie</a></li>
-                    <li class="navigation__item"><a href="#projects">Projekty</a></li>
-                    <li class="navigation__item"><a href="#contact">Kontakt</a></li>
-                  </ul>
-                </div>
-              </nav>
-
-        <div class="section-welcome mt-5">
+        <div class="section-welcome">
             <div class="container">
                 <div class="row">
                     <img class="img-welcome" src="images/d.j.jpg" alt="#">  
@@ -37,21 +53,27 @@
         </div>
 
             <!-- navigation desc -->
-        <div class="container">
-          <ul class="nav d-none mt-3 d-md-flex flex-column flex-md-row justify-content-md-center text-uppercase">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">O mnie</a>
+            <div class="container text-center d-none d-md-block">
+              <div class="row nav-display">
+                  <ul class="nav nav-tabs">
+                    <li class="mt-2">
+                      <a class="text-white" href="#about">O mnie</a> 
+                    </li> 
+                      <span class="hr text-white">|</span>
+                      <li class="mt-2">
+                        <a class="text-white" href="#skills">Umiejętności</a>
+                      </li>
+                      <span class="hr text-white">|</span>
+                    <li class="mt-2">
+                      <a class="text-white" href="#procjects">Projekty</a>
                     </li>
-                    <span class="text-primary hr">|</span>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Projekty</a>
-                    </li>
-                    <span class="text-primary hr">|</span>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Kontakt</a>
-            </li>
-          </ul>
-        </div>
+                    <span class="hr text-white">|</span>
+                    <li class="mt-2">
+                      <a class="text-white" href="#contact">Kontakt</a>
+                    </li> 
+                  </ul>
+                </div>
+            </div>
 
     </header>
 
