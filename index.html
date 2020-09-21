@@ -4,78 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/style.css" type="text/css">
 </head>
 <body>
-  <!-- Navbar -->
-    <nav class="navbar navbar-light navbar-3 nav_bg--color d-md-none">
-
-      <!-- Navbar brand -->
-      <a href="#" class="navbar-brand">Navbar</a>
-
-      <!-- Collapse button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-targer="#navbarSupportContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    
-      <!-- collapsible content -->
-      <div class="collapse navbar-collapse" id="navbarSupportContent15">
-
-      <!-- Links -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a href="#about" class="nav-link">O mnie</a>
-            </li>
-            <li class="nav-item">
-              <a href="#skills" class="nav-link">Umiejętności</a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects" class="nav-link">Projekty</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Kontakt</a>
-            </li>
-          </ul>
-          <!-- /links -->
-      </div>
-      <!-- /collasible content -->
-    </nav>
-  <!-- /navbar -->
-
-    <header class="header">
-        <div class="section-welcome">
-            <div class="container">
-                <div class="row">
-                    <img class="img-welcome" src="images/d.j.jpg" alt="#">  
-                    <h1 class="headline-welcome text-white text-center"> Witaj! Jestem <span class="text-uppercase text-primary">Damian</span>. Web Developer.</h1>
-                </div>
-            </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark nav-display">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#about">O mnie <span class="sr-only">(current)</span></a>
+        </li>
+        <span class="hr d-none d-lg-block">|</span>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#procjects">Projekty</a>
+        </li>
+        <span class="hr d-none d-lg-block">|</span>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#skills">Umiejętności</a>
+        </li>
+        <span class="hr d-none d-lg-block">|</span>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#contact" tabindex="-1" aria-disabled="true">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header class="header">
+      <div class="section-welcome">
+        <div class="container">
+          <div class="row">
+            <!-- <img class="img-welcome" src="images/d.j.jpg" alt="#"> -->
+              <h1 class="headline-welcome text-white text-center"><span class="text-uppercase distinguish">Damian</span>-Web Developer.</h1>
+          </div>
         </div>
-
-            <!-- navigation desc -->
-            <div class="container text-center d-none d-md-block">
-              <div class="row nav-display">
-                  <ul class="nav nav-tabs">
-                    <li class="mt-2">
-                      <a class="text-white" href="#about">O mnie</a> 
-                    </li> 
-                      <span class="hr text-white">|</span>
-                      <li class="mt-2">
-                        <a class="text-white" href="#skills">Umiejętności</a>
-                      </li>
-                      <span class="hr text-white">|</span>
-                    <li class="mt-2">
-                      <a class="text-white" href="#procjects">Projekty</a>
-                    </li>
-                    <span class="hr text-white">|</span>
-                    <li class="mt-2">
-                      <a class="text-white" href="#contact">Kontakt</a>
-                    </li> 
-                  </ul>
-                </div>
-            </div>
-
-    </header>
+      </div>
+      <!-- TODO: dodac linki do własnych stron-->
+        <div class="container section-social-media text-center">
+          <a href="https://github.com/" target="blank">
+            <img class="social-icon mt-2 ml-2" src="images/icons/github.png" alt="github">
+          </a>
+          <a href="https://pl.linkedin.com/" target="blank">
+            <img class="social-icon mt-2 ml-2" src="images/icons/linkedin.png" alt="linkedin">
+          </a>
+        </div>
+      <div class="contact text-center mt-3">
+        <a class="text-uppercase" href="#">Skontaktuj się <span class="distinguish">></span></a>
+      </div>
+      <div id="arrow">
+        <div class="icon-arrow">\/</div>
+      </div>
+  </header>
 
     <main>
 
@@ -86,9 +69,10 @@
     </footer>
 
     <span class="scrollTopButton"></span>
+    
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-   
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

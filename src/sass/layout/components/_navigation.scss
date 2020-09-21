@@ -1,19 +1,8 @@
-// #############
-// navbar
-// #############
-.nav_bg--color {
-  background-color: $color-gray-light;
+nav {
+  z-index: 999;
 }
-  .navbar.navbar-3 .navbar-toggler-icon {
-  background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=6a1b9a');
-  }
-
 .hr {
+  font-size: 26px;
   margin: 0 10px 0 10px;
-}
-li {
-  text-decoration: none;
-}
-.nav-display {
-  display: inline-block;
+  color: $accent-color;
 }

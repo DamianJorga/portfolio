@@ -4,15 +4,25 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    width: 100%;
     padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    z-index: 1;
 }
-
+// TODO: main do usuniecia po zakonczeniu header i zaczeciu sekcji main
+main {
+    height: 100vh;
+    background-color: $accent-color;
+    margin-top: 100vh;
+    position: relative;
+    z-index: 2;
+}
 .section-welcome {
-    margin: 0 10px 0 ;
-    background-color: rgba($color-black, .45);
+    margin: 40px 10px 0 ;
     border: 1px solid $color-gray-light;
-    border-bottom: none;
-    border-radius: 10px;
     p {
         padding: 20px;
         margin: 0;
@@ -22,33 +32,48 @@
 .headline-welcome {
     font-weight: 700;
     margin: 0 auto;
-    padding: 25px 20px 20px;
+    padding: 80px 85px ;
     font-size: 20px;
 
 }
-.img-welcome {
-    margin: 10px auto 0;
-    border-radius: 5px;
-    max-height: 250px;
-    min-height: 250px;
-    object-fit: cover;
-    background-color: $color-white ;
+// .img-welcome {
+//     margin: 10px auto 0;
+//     border-radius: 5px;
+//     max-height: 250px;
+//     min-height: 250px;
+//     object-fit: cover;
+//     background-color: $color-white ;
+// }
+.distinguish {
+    color: $accent-color;
 }
+.section-social-media {
+    
+    .social-icon {
+        height: 40px;
+        background-color: $accent-color;
+        border-radius: 10px;
+    }
+}
+.contact {
+    a {
+        text-decoration: none;
+        color: $color-white;
+    }
+}
+
+
 @media (min-width:567px) {
     .section-welcome {
-        margin: 40px 105px 0 5px;
-        padding: 15px 0;
+        margin: 20px;
         p {
-            padding: 0 20px;
+            padding: 25px 20px;
             margin: 0;
         }
         .img-welcome {
             max-height: 150px;
             min-height: 150px;
     }
-    }
-    .headline-welcome {
-        padding: 15px 20px 0;    
     }
 }
 @media (min-width:640px) {
@@ -79,5 +104,34 @@
 }
 }
 
-
+#arrow {
+    width: 34px;
+    height: 34px;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    text-align: center;
+    text-shadow: 0 -15px 0 $accent-color, 0 -30px 0 $accent-color;
+    overflow: hidden;
+    transition: 14s ease;
+    
+}
+.icon-arrow {
+    color: $accent-color;
+    animation: arrow 1.6s infinite linear;
+} 
+#arrow:hover {
+    text-shadow: 0 -15px 0 $color-white, 0 -30px 0 $color-white;
+    color: $color-white;
+    border-color:$color-white;
+    background-color: $color-black;
+  
+}
+@keyframes arrow {
+    0% {transform:translateY(-80px)}
+    50% {transform: translateY(0)}
+    100% {transform: translateY(80px)}
+}
 
