@@ -32,106 +32,103 @@ main {
 .headline-welcome {
     font-weight: 700;
     margin: 0 auto;
-    padding: 80px 85px ;
-    font-size: 20px;
+    padding: 80px 0;
+    font-size: 16px;
 
 }
-// .img-welcome {
-//     margin: 10px auto 0;
-//     border-radius: 5px;
-//     max-height: 250px;
-//     min-height: 250px;
-//     object-fit: cover;
-//     background-color: $color-white ;
-// }
+
 .distinguish {
     color: $accent-color;
+    font-size: 22px;
 }
-.section-social-media {
-    
+.icon-arrow--right{
+    width: 14px;
+    height: 14px;
+}
+.section_social--media {
     .social-icon {
-        height: 40px;
-        background-color: $accent-color;
+        height: 45px;
         border-radius: 10px;
     }
 }
 .contact {
+    .distinguish {
+        font-size: 12px;
+    }
     a {
+        font-size: 12px;
         text-decoration: none;
         color: $color-white;
+        transition: 1.6s;
+        cursor: pointer;
+        &:hover{
+            color: $accent-color;
+            font-size: 14px;
+        }
     }
 }
 
+.arrow {
+    width: 24px;
+    height: 34px;
+    margin: 0 auto;
+    transition: 1.6s ease;
+    margin-top: 20px;
+    margin-bottom: 110px;
+}
+.icon-arrow {
+    animation: arrow 2.6s infinite linear;
+} 
 
 @media (min-width:567px) {
     .section-welcome {
-        margin: 20px;
+        margin: 40px;
         p {
             padding: 25px 20px;
             margin: 0;
         }
-        .img-welcome {
-            max-height: 150px;
-            min-height: 150px;
     }
+    .arrow {
+        margin-bottom: 60px;
     }
 }
 @media (min-width:640px) {
     .section-welcome {
-    margin: 0 105px 0;
+    margin: 40px 105px 0;
     padding: 5px ;
     }
-    .img-welcome {
-        max-height: 200px;
-        min-height: 200px;
-}
 }
 
 @media (min-width:768px) {
     .section-welcome {
-        padding: 50px;
+        margin: 0 170px;
+        padding: 30px 20px;
+    }
+    .arrow {
+        margin-bottom: 80px;
     }
 }
 @media (min-width:1024px) {
     .section-welcome {
-        position: relative;
-        top: 150px;
-        margin: 0 300px 0 300px   
+        margin: 0 250px 0 250px   
     }
-    .img-welcome {
-        max-height: 300px;
-        min-height: 300px;
 }
+@media (min-width:1200px) {
+    .section-welcome {
+        margin: 0 400px;  
+    }
+    .arrow {
+        margin-bottom: 110px;
+    }
 }
 
-#arrow {
-    width: 34px;
-    height: 34px;
-    position: relative;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 26px;
-    text-align: center;
-    text-shadow: 0 -15px 0 $accent-color, 0 -30px 0 $accent-color;
-    overflow: hidden;
-    transition: 14s ease;
-    
-}
-.icon-arrow {
-    color: $accent-color;
-    animation: arrow 1.6s infinite linear;
-} 
-#arrow:hover {
-    text-shadow: 0 -15px 0 $color-white, 0 -30px 0 $color-white;
-    color: $color-white;
-    border-color:$color-white;
-    background-color: $color-black;
-  
-}
+// TODO: do animacji arrow
+
 @keyframes arrow {
-    0% {transform:translateY(-80px)}
+    0% {transform:translateY(0)}
+    25% {transform: translateY(20px)}
     50% {transform: translateY(0)}
-    100% {transform: translateY(80px)}
+    75% {transform: translateY(20px)}
+    100% {transform:translateY(0)}
 }
 

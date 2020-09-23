@@ -9,55 +9,72 @@
     <link rel="stylesheet" href="style/style.css" type="text/css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark nav-display">
+  <nav class="menu navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item">
+          <a class="menu__link menu__link--color nav-link" href="#about">O mnie <span class="sr-only">(current)</span></a>
+        </li>
+        <span class="vertical d-none d-lg-block">|</span>
+        <li class="nav-item">
+          <a class="menu__link menu__link--color nav-link" href="#procjects">Projekty</a>
+        </li>
+        <span class="vertical d-none d-lg-block">|</span>
         <li class="nav-item active">
-          <a class="nav-link text-white" href="#about">O mnie <span class="sr-only">(current)</span></a>
+          <a class="menu__link menu__link--color nav-link" href="#skills">Umiejętności</a>
         </li>
-        <span class="hr d-none d-lg-block">|</span>
+        <span class="vertical d-none d-lg-block">|</span>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#procjects">Projekty</a>
-        </li>
-        <span class="hr d-none d-lg-block">|</span>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#skills">Umiejętności</a>
-        </li>
-        <span class="hr d-none d-lg-block">|</span>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#contact" tabindex="-1" aria-disabled="true">Kontakt</a>
+          <a class="menu__link menu__link--color nav-link" href="#contact" tabindex="-1" aria-disabled="true">Kontakt</a>
         </li>
       </ul>
     </div>
   </nav>
   <header class="header">
-      <div class="section-welcome">
+      <div class="section-welcome mt-md-5">
         <div class="container">
           <div class="row">
-            <!-- <img class="img-welcome" src="images/d.j.jpg" alt="#"> -->
+            <div class="col-12">
               <h1 class="headline-welcome text-white text-center"><span class="text-uppercase distinguish">Damian</span>-Web Developer.</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div  class="arrow">
+              <div class="mt-5 icon-arrow"><img src="images/icons/down-arrow.svg" alt=""></div>
+            </div>
           </div>
         </div>
       </div>
       <!-- TODO: dodac linki do własnych stron-->
-        <div class="container section-social-media text-center">
-          <a href="https://github.com/" target="blank">
-            <img class="social-icon mt-2 ml-2" src="images/icons/github.png" alt="github">
-          </a>
-          <a href="https://pl.linkedin.com/" target="blank">
-            <img class="social-icon mt-2 ml-2" src="images/icons/linkedin.png" alt="linkedin">
-          </a>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="d-flex justify-content-center justify-content-md-start section_social--media">
+                  <a href="https://github.com/" target="blank">
+                    <img class="social-icon" src="images/icons/github.png" alt="github">
+                  </a>
+                  <a href="https://pl.linkedin.com/" target="blank">
+                    <img class="social-icon ml-3" src="images/icons/linkedin.png" alt="linkedin">
+                  </a>
+              </div>
+            </div>  
+            <div class="col-12 col-md-6">
+              <div class="d-flex d-flex justify-content-center justify-content-md-end contact">
+                <a class="text-uppercase mt-3" href="#">Skontaktuj się <img class="icon-arrow--right" src="images/icons/right-arrow.svg" alt=""> </a>
+              </div>
+            </div> 
+          </div>  
         </div>
-      <div class="contact text-center mt-3">
-        <a class="text-uppercase" href="#">Skontaktuj się <span class="distinguish">></span></a>
-      </div>
-      <div id="arrow">
-        <div class="icon-arrow">\/</div>
-      </div>
+
+
   </header>
 
     <main>
