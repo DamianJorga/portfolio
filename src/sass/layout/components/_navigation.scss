@@ -15,6 +15,7 @@ nav {
     .navbar-nav {
       .menu__link--color{
         color: rgba(0,0,0,0.8);
+        transition: .8s;
         &:hover {
           color: $color-gray-light;
         }
