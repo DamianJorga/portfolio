@@ -21,7 +21,8 @@ main {
     z-index: 2;
 }
 .section-welcome {
-    margin: 40px 10px 0 ;
+    width: 90%;
+    margin: 40px auto 0;
     border: 1px solid $color-gray-light;
     p {
         padding: 20px;
@@ -82,7 +83,6 @@ main {
 
 @media (min-width:567px) {
     .section-welcome {
-        margin: 40px;
         p {
             padding: 25px 20px;
             margin: 0;
@@ -94,14 +94,12 @@ main {
 }
 @media (min-width:640px) {
     .section-welcome {
-    margin: 40px 105px 0;
     padding: 5px ;
     }
 }
 
 @media (min-width:768px) {
     .section-welcome {
-        margin: 0 170px;
         padding: 30px 20px;
     }
     .arrow {
@@ -110,12 +108,12 @@ main {
 }
 @media (min-width:1024px) {
     .section-welcome {
-        margin: 0 250px 0 250px   
+        width: 70%;
     }
 }
 @media (min-width:1200px) {
     .section-welcome {
-        margin: 0 400px;  
+        width: 40%;
     }
     .arrow {
         margin-bottom: 110px;
