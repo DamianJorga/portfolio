@@ -1,4 +1,4 @@
-.scrollTopButton {
+.scrollToTop {
     width: 34px;
     height: 34px;
     position: fixed;
@@ -13,7 +13,7 @@
     transition: all 0.5s ease-in-out;
 }
 
-.scrollTopButton.show {
+.scrollToTop.show {
     visibility: visible;
     cursor: pointer;
     transition: all 0.5s ease-in-out;

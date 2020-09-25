@@ -29,7 +29,6 @@ main {
         margin: 0;
     }
 }
-
 .headline-welcome {
     font-weight: 700;
     margin: 0 auto;
@@ -37,7 +36,6 @@ main {
     font-size: 16px;
 
 }
-
 .distinguish {
     color: $accent-color;
     font-size: 22px;
@@ -68,7 +66,6 @@ main {
         }
     }
 }
-
 .arrow {
     width: 24px;
     height: 34px;
@@ -80,9 +77,10 @@ main {
 .arrow-icon {
     animation: arrow 2.6s infinite linear;
 } 
-
-@media (min-width:567px) {
+@include media-breakpoint-up(sm) { 
     .section-welcome {
+        padding: 5px ;
+        width: 70%;
         p {
             padding: 25px 20px;
             margin: 0;
@@ -92,13 +90,7 @@ main {
         margin-bottom: 60px;
     }
 }
-@media (min-width:640px) {
-    .section-welcome {
-    padding: 5px ;
-    }
-}
-
-@media (min-width:768px) {
+@include media-breakpoint-up(md) {
     .section-welcome {
         padding: 30px 20px;
     }
@@ -106,12 +98,12 @@ main {
         margin-bottom: 80px;
     }
 }
-@media (min-width:1024px) {
+@include media-breakpoint-up(lg) {
     .section-welcome {
-        width: 70%;
+        width: 50%;
     }
 }
-@media (min-width:1200px) {
+@include media-breakpoint-up(xl) {
     .section-welcome {
         width: 40%;
     }
@@ -119,9 +111,6 @@ main {
         margin-bottom: 110px;
     }
 }
-
-// TODO: do animacji arrow
-
 @keyframes arrow {
     0% {transform:translateY(0)}
     25% {transform: translateY(20px)}
