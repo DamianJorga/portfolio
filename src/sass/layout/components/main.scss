@@ -1,0 +1,66 @@
+.main {
+    background-color: black;
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-top: 15px;
+        transition: .8s;
+        &:hover {
+            color: orange;
+        }
+    }
+}
+.line::before{
+    content: "";
+    border-left: 1px solid orange;
+    font-size: 100px;
+    margin: 0 auto 20px;
+    position: relative;
+    top: -40px;
+}
+.about {
+    font-size: 24px;
+    color: orange;
+    text-transform: uppercase;
+}
+.about-description {
+    font-size: 28px;
+}
+.description {
+    font-size: 14px;
+    margin: 0 auto 10px;
+    width: 80%;
+}
+.icons {
+    width: 26px;
+    height: 26px;
+    margin-bottom: 25px;
+}
+.main-headline {
+    font-size: 24px;
+}
+.arrow-right {
+    height: 12px;
+    width: 12px;
+}
+.mb {
+    margin-bottom: 42px;
+}
+.pb {
+    padding:0 30px 150px;
+    margin:30px auto 0 ;
+}
+@media (min-width: 1024px) {
+    .main {
+        height: auto;
+        .about-description {
+            width: 60% ;
+        }
+        .description{
+            margin: 10px 0;
+        }
+    }
+}
