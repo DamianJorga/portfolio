@@ -53,7 +53,7 @@
     padding:0 30px 150px;
     margin:30px auto 0 ;
 }
-@media (min-width: 1024px) {
+@include media-breakpoint-up(lg) {
     .main {
         height: auto;
         .about-description {
