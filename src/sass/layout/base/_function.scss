@@ -1,0 +1,9 @@
+@function image-url($name){
+    $imagePath: '../images/';
+    @return url(#{$imagePath}#{$name});
+}
+
+@function icons-url($name){
+    $imagePath: '../images/icons/';
+    @return url(#{$imagePath}#{$name});
+}
