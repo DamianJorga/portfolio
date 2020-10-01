@@ -1,5 +1,9 @@
 .main {
-    background-color: black;
+    background-color: #202020;
+    height: auto;
+    margin-top: 100vh;
+    position: relative;
+    z-index: 2;
     a {
         text-decoration: none;
         color: white;
@@ -9,13 +13,13 @@
         margin-top: 15px;
         transition: .8s;
         &:hover {
-            color: orange;
+            color: $accent-color;
         }
     }
 }
-.line::before{
+.line-vertical::before{
     content: "";
-    border-left: 1px solid orange;
+    border-left: 1px solid $accent-color;
     font-size: 100px;
     margin: 0 auto 20px;
     position: relative;
@@ -23,7 +27,7 @@
 }
 .about {
     font-size: 24px;
-    color: orange;
+    color: $accent-color;
     text-transform: uppercase;
 }
 .about-description {
@@ -46,15 +50,16 @@
     height: 12px;
     width: 12px;
 }
-.mb {
-    margin-bottom: 42px;
-}
-.pb {
-    padding:0 30px 150px;
-    margin:30px auto 0 ;
-}
+
+
 .card-body {
     background-color: $color-gray;
+}
+@include media-breakpoint-up(md) {
+    .description {
+     margin: 0;
+    }
+ 
 }
 @include media-breakpoint-up(lg) {
     .main {
@@ -62,8 +67,29 @@
         .about-description {
             width: 60% ;
         }
-        .description{
-            margin: 10px 0;
+        a {
+            margin-top: 0;
         }
     }
+}
+
+.modal {
+    margin-top: 50px;
+    .close {
+        color: $color-white;
+    }
+}
+.modal-content {
+    color: $color-white;
+    background-color: $color-gray;
+}
+.modal-footer {
+    button{
+        background-color: $color-gray-light;
+
+}
+}
+.modal-backdrop {
+    width: auto;
+    height: auto;
 }
