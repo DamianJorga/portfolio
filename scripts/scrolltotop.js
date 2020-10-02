@@ -1,7 +1,7 @@
 (function() {
 
     const createButton = () => {
-      const btn = document.createElement('button');
+    const btn = document.createElement('button');
       btn.className = 'scrollToTop hidden';
 
       document.body.appendChild(btn);
@@ -16,7 +16,7 @@
     }
 
     const init = () => {
-        const btn = createButton();
+    const btn = createButton();
 
         btn.addEventListener('click', animateScroll);
 
