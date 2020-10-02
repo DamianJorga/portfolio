@@ -17,7 +17,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto text-center">
         <li class="nav-item">
-          <a class="menu__link menu__link--color nav-link" href="#about">O mnie <span class="sr-only">(current)</span></a>
+          <a class="menu__link menu__link--color nav-link" href="#about-me">O mnie <span class="sr-only">(current)</span></a>
         </li>
         <span class="vertical-line d-none d-lg-block">|</span>
         <li class="nav-item">
@@ -35,15 +35,13 @@
     </div>
   </nav>
   <header class="header">
-    <div class="section-welcome mt-md-5">
-      <div class="container">
+      <div class="container section-welcome mt-md-5">
         <div class="row">
           <div class="col-12">
             <h1 class="headline-welcome text-white text-center"><span class="text-uppercase distinguish">Damian</span>-Web Developer.</h1>
           </div>
         </div>
       </div>
-    </div>
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -53,7 +51,7 @@
         </div>
       </div>
     </div>
-    <!-- TODO: dodac linki do własnych stron-->
+     <!-- TODO: dodac linki do własnych stron -->
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6">
@@ -74,75 +72,100 @@
         </div>  
       </div>
 </header>
-<main class="main mx-auto">
-  <div class="container" id="about">
-    <div class="row">
-      <div class="line-vertical col-12 text-center"></div> <!--pionowa kreska-->
-      <div class="col-12">
-        <h1 class="about text-center mb-4">O mnie</h1>
-        <p class="about-description text-center mx-auto text-white mb-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi suscipit, repellat id deserunt excepturi labore nostrum amet doloremque provident et.
-        </p>
-      </div>
-  <!-- Moblie, small tablet -->
-      <div class="mb col-12 col-sm-6 d-md-none text-center text-white">
-        <img class="icons" src="images/icons/document.svg" alt="">
-        <h4 class="main-headline mb2">Lorem.</h4>
-        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quidem.</p>
-        <a class="" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne" href="#">Zobacz <img class="arrow-right" src="images/icons/right-arrow.svg" alt=""> </a>
-        <!-- collapse -->
-        <div class="collapse" id="collapseOne">
-          <div class="card card-body">
-              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              </p>
+<main class="main">
+    <div class="container about-me" id="about-me">
+      <div class="row">
+        <div class="line-vertical col-12 text-center"></div> <!--pionowa kreska-->
+        <div class="col-12">
+          <h1 class="distinguish text-center mb-4">O mnie</h1>
+          <p class="about-me__description text-center mx-auto text-white  mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi suscipit, repellat id deserunt excepturi labore nostrum amet doloremque provident et.
+          </p>
+        </div>
+    <!-- Moblie, small tablet -->
+        <div class="col-12 col-sm-6 d-md-none text-center text-white">
+          <img class="about-me__icon" src="images/icons/document.svg" alt="">
+          <h4 class="about-me__headline mb2">Strategy.</h4>
+          <p class="strategy__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quidem.</p>
+          <a class="about-me__item" data-toggle="collapse" href="#strategyCollapse" role="button" aria-expanded="false" aria-controls="strategyCollapse" href="#">Zobacz <img class="arrow-right" src="images/icons/right-arrow.svg" alt=""> </a>
+          <!-- collapse -->
+          <div class="collapse" id="strategyCollapse">
+            <div class="collapse-card--bg card card-body">
+                <p class="collapse__description">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="mb col-12 col-sm-6 d-md-none text-center text-white">
-        <img class="icons" src="images/icons/contract.svg" alt="">
-        <h4 class="main-headline mb-2">Lorem.</h4>
-        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, mollitia.</p>
-        <a class="" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo" href="#">Zobacz <img class="arrow-right" src="images/icons/right-arrow.svg" alt=""> </a>
-        <!-- collapse -->
-        <div class="collapse" id="collapseTwo">
-          <div class="card card-body">
-            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+        <div class="col-12 col-sm-6 d-md-none text-center text-white">
+          <img class="about-me__icon" src="images/icons/contract.svg" alt="">
+          <h4 class="about-me__headline mb-2">Branding.</h4>
+          <p class="branding__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, mollitia.</p>
+          <a class="about-me__item" data-toggle="collapse" href="#brandingCollapse" role="button" aria-expanded="false" aria-controls="brandingCollapse" href="#">Zobacz <img class="arrow-right" src="images/icons/right-arrow.svg" alt=""> </a>
+          <!-- collapse -->
+          <div class="collapse" id="brandingCollapse">
+            <div class="collapse-card--bg card card-body">
+              <p class="collapse__description">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="mb col-12 d-md-none text-center text-white">
-        <img class="icons" src="images/icons/plan.svg" alt="">
-        <h4 class="main-headline mb-2">Lorem.</h4>
-        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, molestias?</p>
-        <a class="" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree" href="#">Zobacz <img class="arrow-right" src="images/icons/right-arrow.svg" alt=""> </a>
-        <!-- collapse -->
-        <div class="collapse" id="collapseThree">
-          <div class="card card-body">
-            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </p>
+        <div class="col-12 d-md-none text-center text-white">
+          <img class="about-me__icon" src="images/icons/plan.svg" alt="">
+          <h4 class="about-me__headline mb-2">Design.</h4>
+          <p class="design__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, molestias?</p>
+          <a class="about-me__item" data-toggle="collapse" href="#designCollapse" role="button" aria-expanded="false" aria-controls="designcollapse" href="#">Zobacz <img class="arrow-right" src="images/icons/right-arrow.svg" alt=""> </a>
+          <!-- collapse -->
+          <div class="collapse" id="designCollapse">
+            <div class="collapse-card--bg card card-body">
+              <p class="collapse__description">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+            </div>
           </div>
         </div>
-      </div>
-  <!-- /Mobile, small tablet -->
-      
-  <!-- Desctop, large tablet -->
-      <div class="col-md-4 d-none d-md-block text-white">
-        <img class="icons" src="images/icons/document.svg" alt="">
-        <h4 class="main-headline mb-4">Lorem.1</h4>
-        <p class="description mb-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quidem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, alias! </p>
-        <a href="#" data-toggle="modal" data-target="#Modalone">Zobacz <img class="arrow-right" src="images/icons/right-arrow.svg" alt=""> </a>
-      <!-- Modal 1-->
-        <div class="modal fade" id="Modalone" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <!-- /Mobile, small tablet -->
+    <!-- Desctop, large tablet -->
+
+        <div class="about-me__content col-md-4 d-none d-md-block text-white">
+          <img class="about-me__icon" src="images/icons/document.svg" alt="">
+          <h4 class="about-me__headline mb-4">Strategy.</h4>
+          <p class="strategy__description mb-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, molestias?</p>
+          <a class="about-me__item" href="#" data-toggle="modal" data-target="#strategyModal">Zobacz <img class="arrow-right" src="images/icons/right-arrow.svg" alt=""> </a>
+        <!-- Modal 1-->
+          <div class="modal fade" id="strategyModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal__headline modal-title" id="ModalLabel"> Strategy.</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="modal__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non eius necessitatibus vitae enim autem eveniet modi laudantium sapiente voluptates ipsa! </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-me__content col-md-4 d-none d-md-block text-white">
+          <img class="about-me__icon" src="images/icons/contract.svg" alt="">
+          <h4 class="about-me__headline mb-4">Branding.</h4>
+          <p class="branding__description mb-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, molestias?</p>
+          <a class="about-me__item" href="#" type="button" data-toggle="modal" data-target="#brandingModal">Zobacz <img class="arrow-right" src="images/icons/right-arrow.svg" alt=""> </a>
+        <!-- Modal 2-->
+        <div class="modal fade" id="brandingModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="ModalLabel"> title1</h5>
+                <h5 class="modal__headline modal-title" id="ModalLabel">Branding.</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non eius necessitatibus vitae enim autem eveniet modi laudantium sapiente voluptates ipsa! </p>
+                <p class="modal__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non eius necessitatibus vitae enim autem eveniet modi laudantium sapiente voluptates ipsa! </p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
@@ -150,63 +173,35 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-md-4 d-none d-md-block text-white">
-        <img class="icons" src="images/icons/contract.svg" alt="">
-        <h4 class="main-headline mb-4">Lorem.2</h4>
-        <p class="description mb-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, molestias?</p>
-        <a href="#" type="button" data-toggle="modal" data-target="#Modaltwo">Zobacz <img class="arrow-right" src="images/icons/right-arrow.svg" alt=""> </a>
-      <!-- Modal 2-->
-      <div class="modal fade" id="Modaltwo" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="ModalLabel"> title2</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non eius necessitatibus vitae enim autem eveniet modi laudantium sapiente voluptates ipsa! </p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+        </div>
+        <div class="about-me__content col-md-4 d-none d-md-block text-white">
+          <img class="about-me__icon" src="images/icons/plan.svg" alt="">
+          <h4 class="about-me__headline mb-4">Design.</h4>
+          <p class="design__description mb-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, molestias?</p>
+          <a class="about-me__item" type="button" data-toggle="modal" data-target="#designModal">Zobacz <img class="arrow-right" src="images/icons/right-arrow.svg" alt=""> </a>
+        <!-- Modal 3-->
+        <div class="modal fade" id="designModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal__headline modal-title" id="ModalLabel">Design.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="modal__description"> ipsum dolor, sit amet consectetur adipisicing elit. Non eius necessitatibus vitae enim autem eveniet modi laudantium sapiente voluptates ipsa! </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      </div>
-
-      <div class="col-md-4 d-none d-md-block text-white">
-        <img class="icons" src="images/icons/plan.svg" alt="">
-        <h4 class="main-headline mb-4">Lorem.3</h4>
-        <p class="description mb-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, molestias?</p>
-        <a type="button" data-toggle="modal" data-target="#Modalthree">Zobacz <img class="arrow-right" src="images/icons/right-arrow.svg" alt=""> </a>
-      <!-- Modal 3-->
-      <div class="modal fade" id="Modalthree" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="ModalLabel"> title3</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p> ipsum dolor, sit amet consectetur adipisicing elit. Non eius necessitatibus vitae enim autem eveniet modi laudantium sapiente voluptates ipsa! </p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
-            </div>
-          </div>
         </div>
+                  <!-- /Desctop, large tablet -->
       </div>
-      </div>
-                <!-- /Desctop, large tablet -->
     </div>
-  </div>
-
 </main>
 
     <footer>
