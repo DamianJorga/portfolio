@@ -1,11 +1,10 @@
 (function() {
 
     const createButton = () => {
-    const btn = document.createElement('button');
-      btn.className = 'scrollToTop hidden';
-
-      document.body.appendChild(btn);
-      return btn;
+        const btn = document.createElement('button');
+        btn.className = 'scrollToTop hidden';
+        document.body.appendChild(btn);
+        return btn;
     }
 
     const animateScroll = () => {
@@ -16,10 +15,8 @@
     }
 
     const init = () => {
-    const btn = createButton();
-
+        const btn = createButton();
         btn.addEventListener('click', animateScroll);
-
         window.addEventListener('scroll', () => {
             if(document.documentElement.scrollTop > 100) {
                 btn.classList.remove('hidden');
