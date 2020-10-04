@@ -41,12 +41,21 @@
     text-align: left;
 }
 @include media-breakpoint-up(md) {
-
+.project {
+    height: 100vh;
+}
     .project--list {
         margin: 0;
         padding: 0 0 0 15px;
     }
     .project--name {
         margin-bottom: 20px;
+    }
+    .project-headline {
+        font-size: 20px;
+    }
+    .project--list-description {
+        font-size: 14px;
+        line-height: 26px;
     }
 }
