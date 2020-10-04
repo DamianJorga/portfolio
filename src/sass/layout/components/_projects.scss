@@ -1,10 +1,15 @@
 .projects {
-    background-color: $color-black;
-    padding: 110px 0;
+    background-color: #181818;
+    padding: 50px 5px;
     height:auto;
-}
-.line-vertical {
-    font-size: 20px;
+    .line-vertical {
+        font-size: 50px;
+        &--left {
+            position: relative;
+            top: 5px;
+            left: 15px;
+        }
+    }
 }
 .carousel-theme-1,
 .carousel-theme-2,
@@ -15,32 +20,34 @@
     background-size: cover;
     min-height: 350px;
     padding: 0 5px;
-}
-
-.headline-project {
-    font-size: 16px;
-    text-transform: uppercase;
-    text-shadow: black 3px 10px;
-}
-.project-details {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 16px;
-    text-shadow: black 3px 10px;
-}
-.details-icons {
-    width: 14px;
-    height: 14px;
+    position: relative;
 }
 .project-description {
     font-size: 32px;
-    text-shadow: black 3px 10px;
+    text-shadow:$color-black 4px 3px;
+    margin-left: 10px;
 }
-.carousel-indicators  {
+.headline-project {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.project--details {
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    text-shadow: $color-black 3px 3px;
+    margin: 120px 10px 0 0;
+        &::after {
+        border-bottom: 2px solid $accent-color;
+    }
+}
+.indicators-position  {
     top: 90%;
 }
-.about-project--position {
-    position: relative;
-    top: 110px;
-    left: 200px;
+.line-vertical--absolute {
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
 }

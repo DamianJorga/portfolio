@@ -1,0 +1,52 @@
+.project {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    height: auto;
+    width: 100%;
+    background-color: $color-grey;
+    .pagination--list {
+        font-size: 14px;
+        padding: 20px 10px 10px;
+    }
+    .project-image--detail {
+        padding: 10px;
+    }
+}
+.pagination {
+    a {
+        border: none;
+        background-color: $color-grey;
+    }
+}
+.project--name {
+    font-size: 26px;
+    margin: 10px auto 0;
+    color: $accent-color;
+}
+.project--list {
+    margin:0 25px 0 ;
+    padding: 0;
+}
+.project-headline {
+    font-size: 18px;
+    padding-top: 10px;
+    color: $accent-color;
+}
+.list--type {
+    list-style-type: none;
+}
+.project--list-description {
+    font-size: 12px;
+    padding-top: 5px;
+    text-align: left;
+}
+@include media-breakpoint-up(md) {
+
+    .project--list {
+        margin: 0;
+        padding: 0 0 0 15px;
+    }
+    .project--name {
+        margin-bottom: 20px;
+    }
+}
