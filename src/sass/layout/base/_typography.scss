@@ -8,14 +8,13 @@ h6 {
     font-family: $font-primary;
     letter-spacing: 1px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 a,
 p {
     font-family: $font-secondary;
     font-weight: 400;
 }
-
-
 a {
     font-weight: 700;
     letter-spacing: 1px;
@@ -25,4 +24,15 @@ a {
     font-size: 22px;
     font-weight: 400;
 } 
- 
+.line-vertical::before{
+    content: "";
+    border-left: 1px solid $accent-color;
+    font-size: 100px;
+    margin: 0 auto 20px;
+    position: relative;
+    top: -19px;
+}
+.distinguish {
+    color: $accent-color;
+    letter-spacing: 1px;
+}

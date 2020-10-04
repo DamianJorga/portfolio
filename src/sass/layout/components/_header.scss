@@ -12,18 +12,11 @@
     overflow-x: hidden;
     z-index: 1;
 }
-// TODO: main do usuniecia po zakonczeniu header i zaczeciu sekcji main
-main {
-    height: 100vh;
-    background-color: $accent-color;
-    margin-top: 100vh;
-    position: relative;
-    z-index: 2;
-}
+
 .section-welcome {
     width: 90%;
     margin: 40px auto 0;
-    border: 1px solid $color-gray-light;
+    border: 1px solid $color-grey-light;
     p {
         padding: 20px;
         margin: 0;
@@ -37,7 +30,6 @@ main {
 
 }
 .distinguish {
-    color: $accent-color;
     font-size: 22px;
 }
 .icon-arrow--right{
@@ -45,12 +37,12 @@ main {
     height: 14px;
 }
 .social-media {
-    .social-icon {
+    .social--icon {
         height: 45px;
         border-radius: 10px;
     }
 }
-.contact {
+.social--contact {
     .distinguish {
         font-size: 12px;
     }
