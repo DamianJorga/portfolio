@@ -1,0 +1,46 @@
+.projects {
+    background-color: $color-black;
+    padding: 110px 0;
+    height:auto;
+}
+.line-vertical {
+    font-size: 20px;
+}
+.carousel-theme-1,
+.carousel-theme-2,
+.carousel-theme-3 {
+    background-image: url(../../../../images/Wysoka_A1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    min-height: 350px;
+    padding: 0 5px;
+}
+
+.headline-project {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-shadow: black 3px 10px;
+}
+.project-details {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    text-shadow: black 3px 10px;
+}
+.details-icons {
+    width: 14px;
+    height: 14px;
+}
+.project-description {
+    font-size: 32px;
+    text-shadow: black 3px 10px;
+}
+.carousel-indicators  {
+    top: 90%;
+}
+.about-project--position {
+    position: relative;
+    top: 110px;
+    left: 200px;
+}

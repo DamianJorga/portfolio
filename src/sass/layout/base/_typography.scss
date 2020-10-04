@@ -14,15 +14,28 @@ p {
     font-family: $font-secondary;
     font-weight: 400;
 }
-
-
 a {
     font-weight: 700;
     letter-spacing: 1px;
-    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
 }
 .hr{
     font-size: 22px;
     font-weight: 400;
 } 
  
+.line-vertical::before{
+    content: "";
+    border-left: 1px solid $accent-color;
+    font-size: 40px;
+    margin: 0 auto 20px;
+    position: relative;
+    top: -5px;
+    left: 20px;
+}
+.distinguish {
+    color: $accent-color;
+    letter-spacing: 1px;
+}
