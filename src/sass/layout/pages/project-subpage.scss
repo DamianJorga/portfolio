@@ -1,8 +1,11 @@
-.project {
+.project-sub {
     padding-top: 10px;
     padding-bottom: 15px;
     height: auto;
-    width: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $color-grey;
     .pagination--list {
         font-size: 14px;
@@ -28,12 +31,13 @@
     color: $accent-color;
 }
 .project--list {
-    margin:0 25px 0 ;
-    padding: 0 10px;
+    margin:0 10px 10px ;
+    padding: 0 20px;
 }
 .project-headline {
+    margin: 0 auto;
     font-size: 18px;
-    padding-top: 10px;
+    padding: 10px;
     color: $accent-color;
 }
 .project--list-description {
@@ -41,8 +45,10 @@
     padding-top: 5px;
     text-align: left;
 }
+
 @include media-breakpoint-up(lg) {
-.project {
+.project-sub {
+    height: 100vh;
     .project-image--detail {
         padding: 0 30px;
     }

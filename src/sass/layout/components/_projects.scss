@@ -1,16 +1,12 @@
 .projects {
     background-color:$color-light-black;
-    padding: 50px 5px;
     height:auto;
-    .line-vertical {
-        font-size: 50px;
-        &--left {
-            position: relative;
-            top: 5px;
-            left: 15px;
-        }
+    .line-vertical--top{
+        font-size: 100px;
+        margin: 0 auto 20px;
     }
 }
+
 .carousel-theme-1,
 .carousel-theme-2,
 .carousel-theme-3 {
@@ -21,6 +17,14 @@
     min-height: 350px;
     padding: 0 5px;
     position: relative;
+    .line-vertical {
+        font-size: 50px;
+        &--left {
+            position: relative;
+            top: 5px;
+            left: 15px;
+        }
+    }
 }
 .project-description {
     font-size: 32px;
