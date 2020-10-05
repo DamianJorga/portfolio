@@ -1,0 +1,60 @@
+.my-skills {
+    background-color: #202020;
+    height: auto;
+    padding-bottom: 15px;
+}
+.skills-description {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.skills--icons {
+    width: 54px;
+    height: 54px;
+    margin: 20px 10px;
+    text-align: center;
+}
+.skills-carousel {
+    margin-top: 20px;
+    color: $color-white;
+    min-height: 200px;
+    background-color: $color-grey;
+}
+.skills-carousel-description {
+    padding: 0 40px;
+    text-align: center;
+}
+.carousel--icons {
+    width: 44;
+    height: 44px;
+    margin: 20px 0;
+} 
+// .skills--item  {
+//     margin: 0;
+// } // TODO: Pilnowac tej klasy jesli nie zostanie uzyta usunac!
+
+@include media-breakpoint-up(sm) {
+    .skills--icons {
+        margin-top: 15px;
+    }
+}
+@include media-breakpoint-up(md) {
+    .skills-carousel {
+        width: 60%;
+        height: 350px;
+        margin: 60px auto ;
+    }
+    .skills-carousel-description {
+        margin-top: 90px;
+    }
+    .skills-description {
+        width: 70%;
+        font-size: 18px;
+        margin: 25px auto 30px;
+    }
+}
+@include media-breakpoint-up(md) {
+    .skills-carousel-description {
+        padding:0 90px;
+    }
+}
