@@ -11,11 +11,15 @@
     .project-image--detail {
         padding: 10px;
     }
+    .page-link {
+        color: $color-white;
+    }
 }
 .pagination {
     a {
         border: none;
         background-color: $color-grey;
+        border-bottom: 1px solid $color-grey-light;
     }
 }
 .project--name {
@@ -25,28 +29,27 @@
 }
 .project--list {
     margin:0 25px 0 ;
-    padding: 0;
+    padding: 0 10px;
 }
 .project-headline {
     font-size: 18px;
     padding-top: 10px;
     color: $accent-color;
 }
-.list--type {
-    list-style-type: none;
-}
 .project--list-description {
     font-size: 12px;
     padding-top: 5px;
     text-align: left;
 }
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(lg) {
 .project {
-    height: 100vh;
+    .project-image--detail {
+        padding: 0 30px;
+    }
 }
     .project--list {
         margin: 0;
-        padding: 0 0 0 15px;
+        padding: 0 30px;
     }
     .project--name {
         margin-bottom: 20px;
@@ -57,5 +60,9 @@
     .project--list-description {
         font-size: 14px;
         line-height: 26px;
+    }
+    .page-link:hover {
+        color: $color-grey;
+        background-color: $accent-color;
     }
 }

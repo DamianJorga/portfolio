@@ -21,10 +21,6 @@ a {
         text-decoration: none;
     }
 }
-.hr{
-    font-size: 22px;
-    font-weight: 400;
-} 
 .line-vertical::before{
     content: "";
     position: relative;
@@ -46,10 +42,7 @@ a {
         right: 0;
     }
 }
-.hr-decoration::after {
-    content: "";
-    border-bottom: 2px solid $accent-color;
-}
+
 .distinguish {
     color: $accent-color;
     letter-spacing: 1px;

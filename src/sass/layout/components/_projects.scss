@@ -1,5 +1,5 @@
 .projects {
-    background-color: #181818;
+    background-color:$color-light-black;
     padding: 50px 5px;
     height:auto;
     .line-vertical {
@@ -14,7 +14,7 @@
 .carousel-theme-1,
 .carousel-theme-2,
 .carousel-theme-3 {
-    background-image: url(../../../../images/Wysoka_A1.jpg);
+    background-image: url(../../../../images/wysoka_a1.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -39,8 +39,18 @@
     font-size: 18px;
     text-shadow: $color-black 3px 3px;
     margin: 120px 10px 0 0;
-        &::after {
+    span {
+        position: relative;
+    }
+    span::after {
+        content: "";
         border-bottom: 2px solid $accent-color;
+        width: 120px;
+        display: inline-block;
+        position: absolute;
+        left: 3px;
+        bottom: -2px;
+    
     }
 }
 .indicators-position  {
