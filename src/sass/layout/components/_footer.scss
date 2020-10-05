@@ -1,0 +1,63 @@
+// ##################
+// TODO: spytac sie czemu nie widac footera gdy sa odkomentowane wlasciwosci main i header
+// ##################
+.footer {
+    width: 100%;
+    background-color: #181818;
+    height: auto;
+}
+// TODO: klasa footer posiada marginesy po 64,500px lewa i prawa strona nie wiem czemu
+.form {
+    background-color: $color-grey-light;
+    padding: 20px 5px;
+    margin: 10px 10px;
+}
+.form-group {
+    margin: 0;
+    padding: 10px;
+}
+.form-item {
+    color: $color-white;
+    background-color:$color-grey-light;
+    border: none;
+    border-bottom:1px solid $color-white;
+    padding: 0;
+}
+.contact-label {
+    font-size: 14px;
+    margin: 0;
+}
+.form-control {
+    padding: 0;
+    margin: 0;
+    color: $color-white;
+    background-color: $color-grey-light;
+    border: none;
+    border-bottom: 1px solid $color-white;
+}
+.form-control:focus {
+    color: $color-white;
+    background-color:$color-grey-light;
+    border-color: none;
+    border-bottom: 1px solid $accent-color;
+    outline: 0;
+    box-shadow: none;
+}
+.footer--btn {
+    display: block;
+    margin: 35px auto;
+    padding: 5px 20px;
+    background-color: $accent-color;
+    text-transform: uppercase;
+    border-radius: 0;
+    .btn--arrow {
+        margin-left: 5px;
+        width: 18px;
+        height: 18px;
+    }
+}
+@include media-breakpoint-up(sm) {
+
+}
+
+
