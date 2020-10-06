@@ -16,6 +16,10 @@
     }
     .page-link {
         color: $color-white;
+        &:hover {
+            color: $color-grey;
+            background-color: $accent-color;
+        }
     }
 }
 .pagination {
@@ -66,9 +70,5 @@
     .project--list-description {
         font-size: 14px;
         line-height: 26px;
-    }
-    .page-link:hover {
-        color: $color-grey;
-        background-color: $accent-color;
     }
 }
