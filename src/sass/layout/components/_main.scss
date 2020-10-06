@@ -7,9 +7,13 @@
 }
 .about-me {
     padding-bottom: 30px;
+    .line-vertical {
+        font-size: 100px;
+        margin: 0 auto 20px;
+    }
 }
 .about-me__item {
-    color: white;
+    color: $color-white;
     text-transform: uppercase;
     font-size: 14px;
     margin-top: 15px;
