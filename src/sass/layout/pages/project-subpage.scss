@@ -1,0 +1,74 @@
+.project-sub {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-grey;
+    .pagination--list {
+        font-size: 14px;
+        padding: 20px 10px 10px;
+    }
+    .project-image--detail {
+        padding: 10px;
+    }
+    .page-link {
+        color: $color-white;
+    }
+}
+.pagination {
+    a {
+        border: none;
+        background-color: $color-grey;
+        border-bottom: 1px solid $color-grey-light;
+    }
+}
+.project--name {
+    font-size: 26px;
+    margin: 10px auto 0;
+    color: $accent-color;
+}
+.project--list {
+    margin:0 10px 10px ;
+    padding: 0 20px;
+}
+.project-headline {
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 10px;
+    color: $accent-color;
+}
+.project--list-description {
+    font-size: 12px;
+    padding-top: 5px;
+    text-align: left;
+}
+
+@include media-breakpoint-up(lg) {
+.project-sub {
+    height: 100vh;
+    .project-image--detail {
+        padding: 0 30px;
+    }
+}
+    .project--list {
+        margin: 0;
+        padding: 0 30px;
+    }
+    .project--name {
+        margin-bottom: 20px;
+    }
+    .project-headline {
+        font-size: 20px;
+    }
+    .project--list-description {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .page-link:hover {
+        color: $color-grey;
+        background-color: $accent-color;
+    }
+}

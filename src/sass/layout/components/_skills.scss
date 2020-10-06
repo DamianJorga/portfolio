@@ -2,6 +2,10 @@
     background-color: $color-grey-dark;
     height: auto;
     padding-bottom: 15px;
+    .line-vertical {
+        font-size: 100px;
+        margin: 0 auto 20px;
+    }
 }
 .skills-description {
     font-size: 22px;

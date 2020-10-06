@@ -1,5 +1,5 @@
 .main {
-    background-color: #202020;
+    background-color: $color-grey-dark;
     height: auto;
     margin-top: 100vh;
     position: relative;
@@ -7,6 +7,10 @@
 }
 .about-me {
     padding-bottom: 30px;
+    .line-vertical {
+        font-size: 100px;
+        margin: 0 auto 20px;
+    }
 }
 .about-me__item {
     color: $color-white;

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/style.css" type="text/css">
 </head>
 <body>
@@ -21,7 +20,7 @@
         </li>
         <span class="vertical-line d-none d-lg-block">|</span>
         <li class="nav-item">
-          <a class="menu__link menu__link--color nav-link" href="#procjects">Projekty</a>
+          <a class="menu__link menu__link--color nav-link" href="#projects">Projekty</a>
         </li>
         <span class="vertical-line d-none d-lg-block">|</span>
         <li class="nav-item active">
@@ -38,7 +37,7 @@
       <div class="container section-welcome mt-md-5">
         <div class="row">
           <div class="col-12">
-            <h1 class="headline-welcome text-white text-center"><span class="text-uppercase distinguish">Damian</span>-Web Developer.</h1>
+            <h1 class="headline-welcome text-white text-center"><span class="text-uppercase distinguish">Damian </span>Web Developer.</h1>
           </div>
         </div>
       </div>
@@ -75,7 +74,7 @@
 <main class="main">
     <div class="container about-me" id="about-me">
       <div class="row">
-        <div class="line-vertical col-12 text-center"></div> <!--pionowa kreska-->
+        <div class="line-vertical line-vertical--top col-12 text-center"></div> <!--pionowa kreska-->
         <div class="col-12">
           <h1 class="distinguish text-center mb-4">O mnie</h1>
           <p class="about-me__description text-center mx-auto text-white  mb-5">
@@ -202,6 +201,43 @@
                   <!-- /Desctop, large tablet -->
       </div>
     </div>
+
+    <div class="container-fluid projects" id="projects">
+      <div class="line-vertical line-vertical--top col-12 text-center"></div> <!--pionowa kreska-->
+
+      <h1 class="headline-project distinguish text-center mb-4">Moje projekty</h1>
+
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="indicators-position carousel-indicators mt-5">
+            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <!-- TODO: zmienic cyfry na opis grafiki -->
+            <div class="carousel-theme-1 carousel-item active">
+              <div class="line-vertical line-vertical--left"></div>
+              <p class="project-description text-white d-block w-100"> Project one</p>
+              
+                <a class="project--details text-white" href="project-subpage.html"><span>o projekcie</span></a>
+              </span>
+              <div class="line-vertical line-vertical--absolute"></div>
+            </div>
+            <div class="carousel-theme-2 carousel-item">
+              <div class="line-vertical line-vertical--left"></div>
+              <p class="project-description text-white d-block w-100"> Project two</p>
+                <a class="project--details text-white" href="project-subpage.html"><span>o projekcie</span></a>
+              <div class="line-vertical line-vertical--absolute"></div>
+            </div>
+            <div class="carousel-theme-3 carousel-item">
+              <div class="line-vertical line-vertical--left"></div>
+              <p class="project-description text-white d-block w-100"> Project three</p>
+                <a class="project--details text-white" href="project-subpage.html"><span>o projekcie</span></a>
+                <div class="line-vertical line-vertical--absolute"></div>
+            </div>
+        </div>
+      </div>
+    </div>
     <div class="my-skills container" id="skills">
       <div class="row">
         <div class="line-vertical col-12 text-center"></div> <!--pionowa kreska-->
@@ -286,12 +322,11 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div>
 </main>
 
     <footer>
         
-    </footer>
+  </footer>
 
 
     
