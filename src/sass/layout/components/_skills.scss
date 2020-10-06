@@ -1,0 +1,60 @@
+.my-skills {
+    background-color: $color-grey-dark;
+    height: auto;
+    padding-bottom: 15px;
+    .line-vertical {
+        font-size: 100px;
+        margin: 0 auto 20px;
+    }
+}
+.skills-description {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.skills--icons {
+    width: 54px;
+    height: 54px;
+    margin: 20px 10px;
+    text-align: center;
+}
+.skills-carousel {
+    margin-top: 20px;
+    color: $color-white;
+    min-height: 300px;
+    background-color: $color-grey;
+}
+.skills-carousel-description {
+    padding: 0 40px;
+    text-align: center;
+}
+.carousel--icons {
+    width: 64px;
+    height: 64px;
+    margin: 20px 0 30px;
+} 
+
+@include media-breakpoint-up(sm) {
+    .skills--icons {
+        margin-top: 15px;
+    }
+}
+@include media-breakpoint-up(md) {
+    .skills-carousel {
+        height: 350px;
+        margin: 60px auto ;
+    }
+    .skills-carousel-description {
+        margin-top: 90px;
+    }
+    .skills-description {
+        width: 70%;
+        font-size: 18px;
+        margin: 25px auto 30px;
+    }
+}
+@include media-breakpoint-up(md) {
+    .skills-carousel-description {
+        padding:0 90px;
+    }
+}
