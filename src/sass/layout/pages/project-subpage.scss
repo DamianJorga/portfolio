@@ -9,7 +9,7 @@
     background-color: $color-grey;
     .pagination--list {
         font-size: 14px;
-        padding: 20px 10px 10px;
+        padding: 10px 10px 0;
     }
     .project-image--detail {
         padding: 10px;
@@ -36,6 +36,16 @@
     font-size: 26px;
     margin: 10px auto 0;
     color: $accent-color;
+}
+.project--link {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: $color-black;
+    text-align: center;
+    border: 1px solid $color-grey-dark;
+    border-radius: 10px;
+    background-color: $accent-color;
 }
 .project--list {
     margin:0 10px 10px ;
