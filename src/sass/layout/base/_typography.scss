@@ -4,10 +4,46 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-headlines;
+    font-family: $font-primary;
     letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 a,
 p {
     font-family: $font-secondary;
+    font-weight: 400;
+}
+a {
+    font-weight: 700;
+    letter-spacing: 1px;
+    &:hover {
+        text-decoration: none;
+    }
+}
+.line-vertical::before{
+    content: "";
+    position: relative;
+    border-left: 2px solid $accent-color;
+    &--top {
+        position: relative;
+        top: 0;
+    }
+    &--left {
+        position: relative;
+        left: 0;
+    }
+    &--bottom {
+        position: relative;
+        bottom: 0;
+    }
+    &--right {
+        position: relative;
+        right: 0;
+    }
+}
+
+.distinguish {
+    color: $accent-color;
+    letter-spacing: 1px;
 }

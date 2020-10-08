@@ -1,0 +1,76 @@
+.projects {
+    background-color:$color-light-black;
+    height:auto;
+    padding-bottom: 70px;
+    .line-vertical--top{
+        font-size: 100px;
+        margin: 0 auto 20px;
+    }
+}
+
+.carousel-theme-bike,
+.carousel-theme-sk,
+.carousel-theme-portfolio {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    min-height: 350px;
+    padding: 0 5px;
+    position: relative;
+    .line-vertical {
+        font-size: 50px;
+        &--left {
+            position: relative;
+            top: 5px;
+            left: 15px;
+        }
+    }
+}
+.carousel-theme-bike {
+    background-image: url(../../../../images/sub-page/project-shop.jpg);
+}
+.carousel-theme-sk {
+    background-image: url(../images/sub-page/sk-project.jpg);
+}
+.carousel-theme-portfolio {
+    background-image: url(../images/bg-header.jpg);
+}
+.project-description {
+    font-size: 32px;
+    text-shadow:$color-black 4px 3px;
+    margin-left: 10px;
+}
+.headline-project {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.project--details {
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    text-shadow: $color-black 3px 3px;
+    margin: 120px 10px 0 0;
+    span {
+        position: relative;
+    }
+    span::after {
+        content: "";
+        border-bottom: 2px solid $accent-color;
+        width: 150px;
+        display: inline-block;
+        position: absolute;
+        left: 3px;
+        bottom: -2px;
+    
+    }
+}
+.indicators-position  {
+    top: 90%;
+}
+.line-vertical--absolute {
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+}

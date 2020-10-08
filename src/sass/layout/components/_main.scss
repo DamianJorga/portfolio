@@ -1,0 +1,125 @@
+.main {
+    background-color: $color-grey-dark;
+    height: auto;
+    margin-top: 100vh;
+    position: relative;
+    z-index: 2;
+}
+.about-me {
+    padding-bottom: 30px;
+    .line-vertical {
+        font-size: 100px;
+        margin: 0 auto 20px;
+    }
+}
+.about-me__item {
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 15px;
+    transition: .8s;
+    &:hover {
+        color: $accent-color;
+    }
+}
+.about-me__headline {
+    font-size: 24px;
+    text-transform: none;
+}
+.about-me__description {
+    font-size: 22px;
+}
+.strategy__description,
+.branding__description,
+.design__description {
+    font-size: 14px;
+    margin: 0 auto 10px;
+    width: 80%;
+}
+.about-me__icon {
+    width: 26px;
+    height: 26px;
+    margin: 30px 0 25px 0;
+}
+.arrow-right {
+    height: 12px;
+    width: 12px;
+    margin-top:-3px;
+    margin-left: 5px;
+}
+.collapse-card--bg {
+    background-color: $color-grey;
+    .collapse__description {
+        font-size: 14px;
+    }
+}
+.course--list {
+    padding: 0;
+    margin-bottom: 0;
+    text-align: left;
+    .course--item {
+        margin-bottom: 10px;
+    }
+}
+@include media-breakpoint-up(md) {
+.about-me {
+    margin: 0 auto;
+}
+.about-me__content {
+    padding: 0 25px;
+}
+.strategy__description,
+.branding__description,
+.design__description {
+    margin: 0;
+    width: 100%;
+}
+
+.about-me__item {
+    margin: 5px 0;
+}
+.modal__headline {
+    font-size: 28px;
+    text-transform: none;
+}
+.modal__description {
+    font-size: 14px;
+}
+.course--list {
+    .course--item {
+        margin:0 0 10px 15px;
+    }
+}
+}
+
+@include media-breakpoint-up(lg) {
+.about-me {
+    padding-bottom: 70px;
+}
+.about-me__description {
+    width: 70% ;
+    }
+}
+.about-me__content {
+    padding: 0 45px;
+}
+.modal {
+    margin-top: 50px;
+    .close {
+        color: $color-white;
+    }
+}
+.modal-content {
+    color: $color-white;
+    background-color: $color-grey;
+}
+.modal-footer {
+    button{
+        background-color: $color-grey-light;
+
+}
+}
+.modal-backdrop {
+    width: auto;
+    height: auto;
+}

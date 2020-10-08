@@ -1,0 +1,32 @@
+nav {
+  z-index: 999;
+}
+.menu { 
+  &.navbar-light {
+    .navbar-nav {
+      .active>.nav-link.menu__link--color{
+        color: $accent-color;
+      }
+    }
+  }
+}
+.menu { 
+  &.navbar-light {
+    .navbar-nav {
+      .menu__link--color{
+        color: rgba(0,0,0,0.8);
+        transition: .8s;
+        &:hover {
+          color: $color-grey-light;
+        }
+      }
+    }
+  }
+}
+
+
+.vertical-line {
+  font-size: 26px;
+  margin: 0 10px 0 10px;
+  color: $accent-color;
+}
