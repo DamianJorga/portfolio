@@ -17,13 +17,16 @@
     .page-link {
         color: $color-white;
         &:hover {
-            color: $color-grey;
+            color: $color-light-black;
             background-color: $accent-color;
         }
     }
 }
 .project--link {
     margin: 10px auto;
+    &:hover {
+        color: $color-grey;
+    }
 }
 .pagination {
     a {
@@ -61,6 +64,12 @@
     font-size: 12px;
     padding-top: 5px;
     text-align: left;
+    a {
+        font-size: 16px;
+        &:hover {
+            color: $color-light-black;
+        }
+    }
 }
 
 @include media-breakpoint-up(lg) {
