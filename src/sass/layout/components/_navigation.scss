@@ -2,6 +2,10 @@ nav {
   z-index: 999;
 }
 .menu { 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: .95;
   &.navbar-light {
     .navbar-nav {
       .active>.nav-link.menu__link--color{
