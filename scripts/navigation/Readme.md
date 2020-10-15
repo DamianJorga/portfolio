@@ -1,5 +1,5 @@
 # About  
-Jest to kod napisany dla navigacji który pobiera wszystkie linki oraz elementy LIs (listy) i sprawdza żeby żaden link nie posiadal klasy "active", nastepnie gdy użytkownik kliknie na link w navigacji wtedy link zmieni kolor na (Hex #f7ac53).
+Jest to skrypt który nadaje klase .active dla aktywnego linku nawigacji.
 
 ### Case 1: user lands on homepage  
 
@@ -9,8 +9,8 @@ Jest to kod napisany dla navigacji który pobiera wszystkie linki oraz elementy 
 
 * Test3: user clicks another link (not the previous one) - all links reset orange color and their LIs elements remove .active class. Next, newly clicked menu link is orange and its parent LI element gets .active class
 
-### Case2: user lands on subsection (skills)  
+### Case2: user lands on subsection (projects)  
 
 * Test1: uzytkownik wchodzi w podsekcje (projects) przez (google) wszystkie linki poza (projects) sa ciemno szare(Hex #202020) a link (projects) jest pomaranczowy (hex #f7ac53).  
 
-* Test2: uzytkwonik klika link (my-skills) - w link (projects) resetowane sa kolory do ciemno szarego, traci klase (active) ktorą otrzymuje link (my-skills) i otrzymuje kolor pomaranczowy (Hex #f7ac53).
+* Test2: uzytkownik przechodzi z podesekcji (projects) do (my-skills) - klasa .active jest resetowana z (projects) i dodawana do (my-skills). 
