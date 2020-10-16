@@ -1,22 +1,90 @@
-const links = [...document.querySelectorAll(".nav-link")]; //pobranie wszystkich linkow z menu z uzyciem operatora REST (zamiana obiektu nodeList na obiekt tablicy)
+/**
+ * Menu Active Script
+ * author: Damian Jorga
+ * Freeware 2020 but keep Author note when use
+ */
+/**
+ * How to use:
+ * 1.) Create menu structure in HTML document with below structure (standard menu)
+ * <ul>
+ *     <li><a hef="">Link</a></li>
+ *     <li><a hef="">Link</a></li>
+ *     <li><a hef="">Link</a></li>
+ * </ul>
+ *
+ * 2.) Add 'Menu Active Script' js file to your project (in HTML, suggested place - before </body> tag end but over your main js file)
+ *
+ * 3.) Create CSS name for ACTIVE class and style it, example:
+ *     .active > .MENU_LINK ELEMENT_CSS_SELECTOR(a) {
+ *        color: $accent-color;
+ *     }
+ *
+ * 4.) In your main js file execute 'Menu Active Script'
+ * window.m3nu("MENU LINK ELEMENT CSS SELECTOR (a)", "MENU LI CSS SELECTOR (li)", "NAME OF ACTIVE CLASS");
+ */
 
-const menuLIs = [...document.querySelectorAll(".nav-item")]; //pobranie wszystkich elementow LIs z menu
 
-links.forEach((link) => {
-    // console.log(window.location.hash); // sprawdzenie hash'u strony otwartej przez wpisanie podsekcji za hash
-    if (window.location.hash) {
-        const hash = window.location.linkshash;
-
-    if (link.getAttribute("href") == hash) {
-        link.parentElement.classList.add("active"); // ma dodac klase active po wlaczeniu strony z google. ???? nie dziala
-    }
-}
-    link.addEventListener("click", function (e) {
-        // console.log("klikneles w link " + e.target); // test klikniecia
-        menuLIs.forEach((menuLI, index) => {
-            if (menuLI.classList.contains("active")); 
-            menuLI.classList.remove("active"); // usuwa klase active z poprzednio kliknietego elementu
+(function () {
+    //get all elements and put to the array
+    const getElementsToArray = (el) => [...document.querySelectorAll(el)];
+  
+    //check if homepage and return location.hash
+    const isNotHomePage = () => {
+      if (window.location.hash) return window.location.hash;
+      else return false;
+    };
+  
+    //check if element contains provided class
+    const isActive = (el, activeClass) => el.classList.contains(activeClass);
+  
+    //add | remove provided class on selected element
+    //operation = 'add' | 'remove'
+    const activeClass = (el, activeClass, operation) => {
+      if (operation === "add") el.parentElement.classList.add(activeClass);
+      else if (operation === "remove") {
+        el.classList.remove(activeClass);
+      } else {
+        throw new Error(
+          "Incorrect type of operation. Possible 2 values: add | remove"
+        );
+      }
+    };
+  
+    //aggregation all functions and prepare structure of the script
+    const init = (menuLink, menuElement, activeMenuClass) => {
+      //get all menu links and put them to the array
+      const menuLinks = getElementsToArray(`.${menuLink}`);
+  
+      //get all menu items (LIs elements of menu links) and put them to the array
+      const menuNavItems = getElementsToArray(`.${menuElement}`);
+  
+      //check if user lands on subsection
+      if (isNotHomePage()) {
+        const hash = isNotHomePage();
+  
+        menuLinks.forEach((link) => {
+          if (link.getAttribute("href") == hash) {
+            activeClass(link, activeMenuClass, "add");
+          }
         });
-        link.parentElement.classList.add("active"); // dodaje klase active do kliknietego elementu
-    });
-});
+      }
+  
+      //user lands on homepage
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+            console.log("menu nav: ",menuNavItems);
+          //reset active class from selected elements
+          menuNavItems.forEach((navItem) => {
+            if (isActive(navItem, activeMenuClass)) {
+              activeClass(navItem, activeMenuClass, "remove");
+            }
+          });
+          //add provided active class to clicked element
+          activeClass(link, activeMenuClass, "add");
+        });
+      });
+    };
+  
+    //add menu script to window object
+    window.m3nu = init;
+  })();
