@@ -105,6 +105,17 @@
             margin-top: 10px;
         }
     }
+    .form-item {
+        margin-top: 15px;
+    }
+    .error {
+        position: absolute;
+        top: 25px;
+    }
+    .error-email {
+        position: absolute;
+        top: 40px;
+    }
 }
 @include media-breakpoint-up(md) {
     .form {
