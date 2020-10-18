@@ -1,5 +1,5 @@
 # About  
-Jest to skrypt który nadaje klase .active dla aktywnego linku nawigacji.
+Jest to skrypt który nadaje klase .active dla aktywnego linku nawigacji. Skrypt dziala ze stronami typu SPA (Single Page app). skrypt wymaga aby linki w menu dzialaly jako kotwice odnoszace sie do tresci w jednej stronie.
 
 ### Case 1: user lands on homepage  
 

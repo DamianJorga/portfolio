@@ -88,3 +88,5 @@
     //add menu script to window object
     window.m3nu = init;
   })();
+
+  // TODO: extend the script to be used for standard navigation (with external and internal links), not only anchor links.
