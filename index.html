@@ -383,7 +383,7 @@
       </div>
 
 <!-- TODO: style success-message in CSS -->
-<p class="form__success-message hidden">Message sent successfully</p>
+<p class="form__success-message hidden text-center col-12">Message sent successfully</p>
 <!-- add a PHP form with a mentor -->
 <form action="#" class="form form-row text-white text-uppercase w-100">
     <div class="form-group col-12 col-sm-6">
@@ -394,7 +394,7 @@
     <div class="form-group col-12 col-sm-6">
       <label class="contact-label" for="email">your email:</label>
       <span class="asterisk">*</span>
-      <p class="error error-email hidden">Please enter valid email!</p>
+      <p class="error error-email hidden mt-1">Please enter valid email!</p>
       <input type="text" class="form-item form-control" id="email" data-required>
     </div>
     <div class="form-group col-12 col-sm-6">
@@ -412,12 +412,12 @@
       <span class="asterisk">*</span>
       <textarea class="form-control" rows="1" id="message" data-required></textarea>
     </div>
-    <div class="conditions col-12">
-      <p class="error hidden error-rodo">The field is required!</p>
+    <label class="conditions col-12">
+      <p class="error hidden error-rodo mt-2">The field is required!</p>
       <input type="checkbox" value="Y" data-required="true" id="gdpr">
       <span class="conditions-description">By sending a message, he accepts the receipt of the message</span>
       <span class="asterisk">*</span>
-    </div>
+    </label>
     <button type="submit" class="footer--btn btn text-center mx-auto">Send<span><img class="btn--arrow" src="images/icons/footer-right-arrow.svg" alt=""></span></button>
       </form>
       <div class="col-12 col-sm-6 col-md-6 text-white text-center">
