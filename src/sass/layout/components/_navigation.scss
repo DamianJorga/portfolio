@@ -2,6 +2,10 @@ nav {
   z-index: 999;
 }
 .menu { 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: .95;
   &.navbar-light {
     .navbar-nav {
       .active>.nav-link.menu__link--color{
@@ -14,11 +18,7 @@ nav {
   &.navbar-light {
     .navbar-nav {
       .menu__link--color{
-        color: rgba(0,0,0,0.8);
-        transition: .8s;
-        &:hover {
-          color: $color-grey-light;
-        }
+        color: $color-grey-dark;
       }
     }
   }
