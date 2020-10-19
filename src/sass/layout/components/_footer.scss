@@ -35,7 +35,7 @@
 }
 .form-control {
     padding: 0;
-    margin: 0;
+    margin: 30px 0 0;
     color: $color-white;
     background-color: $color-grey-light;
     border: none;
@@ -73,6 +73,34 @@
     margin: 15px 0 10px;
     font-size: 18px;
 }
+.conditions {
+    margin-top: 5px;
+    padding: 10px;
+    .conditions-description {
+        padding-left: 5px;
+        font-size: 12px;
+        text-transform: none;
+    }
+    .asterisk {
+        font-size: 14px;
+     }
+}
+.error {
+    color: $color-white;
+    border-bottom: 1px solid $color-errork n≥≤ ;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-white;
+}
+.hidden {
+    display: none;
+}
+.form__success-message {
+    color: #00cc00;
+}
 @include media-breakpoint-up(sm) {
     .footer-description {
         line-height: 28px;
@@ -82,6 +110,22 @@
             margin-top: 10px;
         }
     }
+    .error {
+        position: absolute;
+        top: 25px;
+    }
+    .error-email {
+        position: absolute;
+        top: 40px;
+    }
+}
+@include media-breakpoint-up(sm) {
+    .form-control {
+        margin-top: 55px
+}
+.error-email {
+    top: 60px    
+}
 }
 @include media-breakpoint-up(md) {
     .form {
@@ -93,6 +137,16 @@
     .form {
         margin: 0 170px 50px;
         padding: 20px 110px;
+    }
+    .conditions {
+
+        .conditions-description {
+            font-size: 14px;
+        }
+        .asterisk {
+            font-size: 18px;
+         }
+    
     }
 }
 
