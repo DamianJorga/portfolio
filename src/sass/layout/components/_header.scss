@@ -3,10 +3,10 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: auto;
     width: 100%;
     padding: 40px 0;
-    position: fixed;
+    // position: fixed;
     display: flex;
     top: 0;
     left: 0;
@@ -19,7 +19,7 @@
 
 .section-welcome {
     width: 90%;
-    margin: 40px auto 0;
+    margin: 55px auto 0;
     border: 1px solid $color-grey-light;
     p {
         padding: 20px;
@@ -73,8 +73,10 @@
 .arrow-icon {
     animation: arrow 2.6s infinite linear;
 } 
+
 @include media-breakpoint-up(sm) { 
     .section-welcome {
+        margin-top: 70px;
         padding: 5px ;
         width: 70%;
         p {

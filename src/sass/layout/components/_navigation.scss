@@ -13,6 +13,7 @@ nav {
       }
     }
   }
+
 }
 .menu { 
   &.navbar-light {
@@ -26,6 +27,8 @@ nav {
 .menu__logo {
   width: 45px;
   height: 45px;
+  padding: 0;
+  margin-right: 40px;
 }
 
 .vertical-line {
@@ -33,3 +36,4 @@ nav {
   margin: 0 10px 0 10px;
   color: $accent-color;
 }
+
